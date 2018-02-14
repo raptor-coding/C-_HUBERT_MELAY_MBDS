@@ -58,7 +58,14 @@ namespace projet_C_Sharp_Melay_Hubert
 
             BoardGame boardGame = new BoardGame(players);
             GameEngine gameEngine = new GameEngine(boardGame);
-            Console.Write(gameEngine.BoardGame.playersListToString());
+            Console.Write(gameEngine.BoardGame.playersListToString()); // Affichage du plateau au départ
+
+            // Move de cailloux par les joueurs
+            Console.WriteLine("Move de cailloux");
+            gameEngine.BoardGame.Players[0].moveSeeds(1, gameEngine.BoardGame.Players[0].Pits[0], gameEngine.BoardGame.Players[0].Pits[1]);
+            gameEngine.BoardGame.Players[0].moveSeeds(4, gameEngine.BoardGame.Players[0].Pits[1], gameEngine.BoardGame.Players[0].Pits[2]);
+            Console.Write(gameEngine.BoardGame.playersListToString()); // Affichage du plateau après les moves
+
 
         }
 

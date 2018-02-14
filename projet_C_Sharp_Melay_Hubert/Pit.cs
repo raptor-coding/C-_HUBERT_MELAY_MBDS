@@ -22,18 +22,5 @@ namespace projet_C_Sharp_Melay_Hubert
         {
             return "pit "+this.Id + " - nb graines : " + this.Seeds.Count+"\n";
         }
-
-        /*public void receiveMultipleSeed(List<Seed> seeds)
-        {
-            foreach(Seed seed in seeds)
-            {
-                this.Seeds.Add(seed);
-            }
-        }
-
-        public void receiveOneSeed(Seed seed)
-        {
-            this.Seeds.Add(seed);
-        }*/
     }
 }
