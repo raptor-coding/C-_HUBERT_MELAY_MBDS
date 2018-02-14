@@ -1,0 +1,14 @@
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\bin\Release\projet_C_Sharp_Melay_Hubert.exe.config
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\bin\Release\projet_C_Sharp_Melay_Hubert.exe
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\bin\Release\projet_C_Sharp_Melay_Hubert.pdb
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\MainWindow.g.cs
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\App.g.cs
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\projet_C_Sharp_Melay_Hubert_MarkupCompile.cache
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\projet_C_Sharp_Melay_Hubert_MarkupCompile.lref
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\MainWindow.baml
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\projet_C_Sharp_Melay_Hubert.g.resources
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\projet_C_Sharp_Melay_Hubert.Properties.Resources.resources
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\projet_C_Sharp_Melay_Hubert.csproj.GenerateResource.Cache
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\projet_C_Sharp_Melay_Hubert.csproj.CoreCompileInputs.cache
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\projet_C_Sharp_Melay_Hubert.exe
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Release\projet_C_Sharp_Melay_Hubert.pdb
