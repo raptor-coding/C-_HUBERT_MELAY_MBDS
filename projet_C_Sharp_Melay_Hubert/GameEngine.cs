@@ -17,11 +17,16 @@ namespace projet_C_Sharp_Melay_Hubert
 
         public void launchGame()
         {
+            Console.Write(this.BoardGame.playersListToString()); // Affichage du plateau avant de commencer les coups
             // Move de cailloux par les joueurs
             Console.WriteLine("Egrainage de cailloux du joueur " + this.BoardGame.Players[0].Name);
             this.BoardGame.Players[0].moveSeed(this.BoardGame.Players[0].Pits[0], this.BoardGame.Players[0].Pits[1]);
             this.BoardGame.Players[0].moveSeed(this.BoardGame.Players[0].Pits[0], this.BoardGame.Players[0].Pits[2]);
             this.BoardGame.Players[0].moveSeed(this.BoardGame.Players[0].Pits[0], this.BoardGame.Players[1].Pits[0]); // Vers le pit de Cécile
+            Console.WriteLine("Egrainage de cailloux du joueur " + this.BoardGame.Players[1].Name);
+            this.BoardGame.Players[1].moveSeed(this.BoardGame.Players[1].Pits[0], this.BoardGame.Players[1].Pits[1]);
+            this.BoardGame.Players[1].moveSeed(this.BoardGame.Players[1].Pits[0], this.BoardGame.Players[1].Pits[2]);
+            this.BoardGame.Players[1].moveSeed(this.BoardGame.Players[1].Pits[0], this.BoardGame.Players[0].Pits[0]); // Vers le pit de Jux
             Console.Write(this.BoardGame.playersListToString()); // Affichage du plateau après les moves
         }
 
