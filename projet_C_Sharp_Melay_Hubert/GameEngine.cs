@@ -34,7 +34,7 @@ namespace projet_C_Sharp_Melay_Hubert
         {
             int currentPlayerPit = 1;
             int pitToFill = 6 - currentPlayerPit;
-            int nbGrainesPlayed = CurrentPlayer.Pits[currentPlayerPit].Seeds.Count;
+            int nbGrainesPlayed = CurrentPlayer.Pits[currentPlayerPit].Seeds;
 
             //Sow the seeds in the currentPlayer pits
             if (nbGrainesPlayed > 0)
@@ -61,8 +61,8 @@ namespace projet_C_Sharp_Melay_Hubert
                     CurrentPlayer.moveSeed(CurrentPlayer.Pits[currentPlayerPit], OtherPlayer.Pits[otherPlayerPit + i]);
 
                     //Collect Seed
-                    if (OtherPlayer.Pits[otherPlayerPit + i].Seeds.Count == 2
-                        || OtherPlayer.Pits[otherPlayerPit + i].Seeds.Count == 3)
+                    if (OtherPlayer.Pits[otherPlayerPit + i].Seeds == 2
+                        || OtherPlayer.Pits[otherPlayerPit + i].Seeds == 3)
                     {
                         //OtherPlayer.Pits[otherPlayerPit + i].removeGraine(1);
                         CurrentPlayer.Score++;

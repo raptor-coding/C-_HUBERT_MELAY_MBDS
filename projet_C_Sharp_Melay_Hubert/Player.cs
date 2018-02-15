@@ -39,9 +39,8 @@ namespace projet_C_Sharp_Melay_Hubert
 
         public void moveSeed(Pit pitSource, Pit pitDestination)
         {
-            Seed removedSeed = pitSource.Seeds[pitSource.Seeds.Count-1];
-            pitSource.Seeds.Remove(removedSeed);
-            pitDestination.Seeds.Add(removedSeed);
+            pitSource.Seeds--;
+            pitDestination.Seeds++;
         }
         
     }
