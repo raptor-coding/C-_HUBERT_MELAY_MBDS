@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projet_C_Sharp_Melay_Hubert
 {
-    class BoardGame
+    public class BoardGame
     {
         public List<Player> Players { get; set; }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projet_C_Sharp_Melay_Hubert
 {
-    class Player
+    public class Player
     {
         public int Id { get; set; }
         public String Name { get; set; }

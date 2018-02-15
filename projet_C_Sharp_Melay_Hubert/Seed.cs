@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projet_C_Sharp_Melay_Hubert
 {
-    class Seed
+    public class Seed
     {
         public int Id { get; set; }
 

@@ -17,7 +17,7 @@
         <Button x:Name="hostGame_button" Content="Host Game" HorizontalAlignment="Left" Margin="347,45,0,0" VerticalAlignment="Top" Width="114"/>
         <Label x:Name="label1" Content="Welcome, type your nickname" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top"/>
         <Button x:Name="connectGame_button" Content="Connnect to Game" HorizontalAlignment="Left" Margin="347,97,0,0" VerticalAlignment="Top" Width="114"/>
-        <Button x:Name="localGame1v1_button" Content="Local Game 1vs1" HorizontalAlignment="Left" Margin="347,149,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button x:Name="localGame1v1_button" Content="Local Game 1vs1" HorizontalAlignment="Left" Margin="347,149,0,0" VerticalAlignment="Top" Width="114" Click="localGame1v1_button_Click"/>
         <Button x:Name="localGame1v1_IA_button" Content="Local Game vs IA" HorizontalAlignment="Left" Margin="347,206,0,0" VerticalAlignment="Top" Width="114"/>
         <Button x:Name="history_button" Content="History" HorizontalAlignment="Left" Margin="347,261,0,0" VerticalAlignment="Top" Width="114"/>
 

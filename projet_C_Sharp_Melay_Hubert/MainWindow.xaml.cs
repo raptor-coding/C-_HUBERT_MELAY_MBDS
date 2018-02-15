@@ -21,11 +21,14 @@ namespace projet_C_Sharp_Melay_Hubert
     public partial class MainWindow : Window
     {
         static String nameUser;
+        public BoardGame boardGame { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
             BoardGame boardGame = new BoardGame();
             boardGame.createGame();
+            this.boardGame = boardGame;
         }
 
         void EnterClicked(object sender, KeyEventArgs e)
@@ -38,5 +41,11 @@ namespace projet_C_Sharp_Melay_Hubert
             }
         }
 
+        private void localGame1v1_button_Click(object sender, RoutedEventArgs e)
+        {
+            Game gameWindow = new Game();
+            gameWindow.Show();
+            gameWindow.updateGUI(this.boardGame);
+        }
     }
 }
