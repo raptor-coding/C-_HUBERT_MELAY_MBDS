@@ -13,3 +13,5 @@ C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\
 C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Debug\projet_C_Sharp_Melay_Hubert.csproj.CoreCompileInputs.cache
 C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Debug\projet_C_Sharp_Melay_Hubert.exe
 C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Debug\projet_C_Sharp_Melay_Hubert.pdb
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Debug\boardGameGUI.g.cs
+C:\Users\jux\Desktop\C#\projet_C_Sharp_Melay_Hubert\projet_C_Sharp_Melay_Hubert\obj\Debug\boardGameGUI.baml

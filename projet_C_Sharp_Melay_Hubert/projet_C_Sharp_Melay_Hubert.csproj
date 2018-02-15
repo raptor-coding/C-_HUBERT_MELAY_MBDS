@@ -54,7 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="boardGameGUI.xaml.cs">
+      <DependentUpon>boardGameGUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Seed.cs" />
+    <Page Include="boardGameGUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

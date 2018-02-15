@@ -43,7 +43,7 @@ namespace projet_C_Sharp_Melay_Hubert
 
         private void localGame1v1_button_Click(object sender, RoutedEventArgs e)
         {
-            Game gameWindow = new Game();
+            boardGameGUI gameWindow = new boardGameGUI();
             gameWindow.Show();
             gameWindow.updateGUI(this.boardGame);
         }
