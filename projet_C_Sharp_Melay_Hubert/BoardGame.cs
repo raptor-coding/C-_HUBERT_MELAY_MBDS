@@ -38,14 +38,19 @@ namespace projet_C_Sharp_Melay_Hubert
 
             List<Player> players = new List<Player>();
 
-            List<Pit> pits1 = createPits();              
-            player1 = new Player(97, "Jux", pits1);
+            List<Pit> pits1 = createPits();
+            //player1 = new Player(97, "Jux", pits1);
+            AI p1 = new AI(97, "JUX", pits1, null);
+            player1 = p1;      
             players.Add(player1);
 
             List<Pit> pits2 = createPits();
-            player2 = new Player(107, "Cécile", pits2);
+            //player2 = new Player(107, "Cécile", pits2);
+            player2 = new AI(107, "Cécile", pits2, player1);
+            
             players.Add(player2);
             this.Players = players;
+            p1.Adversary = player2;
 
             gameEngine = new GameEngine(this, player1, player2);
 
@@ -61,7 +66,10 @@ namespace projet_C_Sharp_Melay_Hubert
             }  */        
             gameEngine.launchGame();
 
+
         }
+
+        
 
         List<Pit> createPits()
         {
@@ -74,19 +82,22 @@ namespace projet_C_Sharp_Melay_Hubert
             return pits;
         }
 
-        public void designateCurrentPlayer()
+      /*  public void designateCurrentPlayer()
         {
-            if (player1 == gameEngine.CurrentPlayer)
+            if (player1.Name == gameEngine.CurrentPlayer.Name)
             {
-                player1 = gameEngine.OtherPlayer;
-                player2 = gameEngine.CurrentPlayer;
+                Console.Write("yolo1");
+                gameEngine.OtherPlayer = player1;
+                gameEngine.CurrentPlayer = player2;
             }
             else
             {
-                player2 = gameEngine.OtherPlayer;
-                player1 = gameEngine.CurrentPlayer;
+                Console.Write("yolo2");
+                gameEngine.OtherPlayer = player2;
+                gameEngine.CurrentPlayer = player1;
             }
+            Console.Write("yolo");
             gameEngine.playOneRound();
-        }
+        }*/
     }
 }
