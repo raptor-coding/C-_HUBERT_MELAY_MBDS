@@ -8,6 +8,10 @@ namespace projet_C_Sharp_Melay_Hubert
 {
     class BoardGame
     {
+        static GameEngine gameEngine;
+        static Player player1;
+        static Player player2;
+
         public List<Player> Players { get; set; }
 
         public BoardGame()
@@ -55,8 +59,8 @@ namespace projet_C_Sharp_Melay_Hubert
             Pit pit6 = new Pit(6, new List<Seed> { seed11, seed12 });
 
             // On crée les joueurs et on leur affecte des pits
-            Player player1 = new Player(97, "Jux", new List<Pit> { pit4, pit5, pit3 });
-            Player player2 = new Player(99, "Cécile", new List<Pit> { pit1, pit2, pit6 });
+            player1 = new Player(97, "Jux", new List<Pit> { pit4, pit5, pit3 });
+            player2 = new Player(99, "Cécile", new List<Pit> { pit1, pit2, pit6 });
 
             // Liste des joueurs
             List<Player> players = new List<Player>();
@@ -64,9 +68,35 @@ namespace projet_C_Sharp_Melay_Hubert
             players.Add(player2);
             this.Players = players;
 
-            GameEngine gameEngine = new GameEngine(this);
+            gameEngine = new GameEngine(this, player1, player2);
+
+            //Who start the game with a random
+           /* Random rand = new Random();
+            if (rand.Next(0, 2) == 0)
+            {
+                gameEngine = new GameEngine(this, player1, player2);
+            }
+            else
+            {
+                gameEngine = new GameEngine(this, player2, player1);
+            }  */        
             gameEngine.launchGame();
 
+        }
+
+        public void designateCurrentPlayer()
+        {
+            if (player1 == gameEngine.CurrentPlayer)
+            {
+                player1 = gameEngine.OtherPlayer;
+                player2 = gameEngine.CurrentPlayer;
+            }
+            else
+            {
+                player2 = gameEngine.OtherPlayer;
+                player1 = gameEngine.CurrentPlayer;
+            }
+            gameEngine.playOneRound();
         }
     }
 }
