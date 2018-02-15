@@ -37,15 +37,11 @@ namespace projet_C_Sharp_Melay_Hubert
             return text;
         }
 
-        public void moveSeeds(int numberOfSeeds, Pit pitSource, Pit pitDestination)
+        public void moveSeed(Pit pitSource, Pit pitDestination)
         {
-            if(numberOfSeeds>pitSource.Seeds.Count) // On demande de déplacer plus de graines que disponible dans le pit -> on enlève le max dispo
-            {
-                numberOfSeeds = pitSource.Seeds.Count;
-            }
-            List<Seed> removedSeeds = pitSource.Seeds.GetRange(0, numberOfSeeds);
-            pitSource.Seeds.RemoveRange(0, numberOfSeeds);
-            pitDestination.Seeds.AddRange(removedSeeds);
+            Seed removedSeed = pitSource.Seeds[pitSource.Seeds.Count-1];
+            pitSource.Seeds.Remove(removedSeed);
+            pitDestination.Seeds.Add(removedSeed);
         }
         
     }

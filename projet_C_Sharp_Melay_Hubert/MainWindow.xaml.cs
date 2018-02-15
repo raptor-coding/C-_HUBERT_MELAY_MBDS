@@ -38,12 +38,13 @@ namespace projet_C_Sharp_Melay_Hubert
             Seed seed10 = new Seed(10);
             Seed seed11 = new Seed(11);
             Seed seed12 = new Seed(12);
+            Seed seed13 = new Seed(13);
 
             // On crée les pits et on leur affecte des graines
             Pit pit1 = new Pit(1, new List<Seed> { seed2, seed8, seed3 } );
             Pit pit2 = new Pit(2, new List<Seed> { seed3, seed4 } );
             Pit pit3 = new Pit(3, new List<Seed> { seed9, seed6 } );
-            Pit pit4 = new Pit(4, new List<Seed> { seed7, seed1 } );
+            Pit pit4 = new Pit(4, new List<Seed> { seed7, seed1, seed13 } );
             Pit pit5 = new Pit(5, new List<Seed> { seed5, seed10 } );
             Pit pit6 = new Pit(6, new List<Seed> { seed11, seed12 } );
 
@@ -61,9 +62,10 @@ namespace projet_C_Sharp_Melay_Hubert
             Console.Write(gameEngine.BoardGame.playersListToString()); // Affichage du plateau au départ
 
             // Move de cailloux par les joueurs
-            Console.WriteLine("Move de cailloux");
-            gameEngine.BoardGame.Players[0].moveSeeds(1, gameEngine.BoardGame.Players[0].Pits[0], gameEngine.BoardGame.Players[0].Pits[1]);
-            gameEngine.BoardGame.Players[0].moveSeeds(4, gameEngine.BoardGame.Players[0].Pits[1], gameEngine.BoardGame.Players[0].Pits[2]);
+            Console.WriteLine("Egrainage de cailloux du joueur "+player1.Name);
+            gameEngine.BoardGame.Players[0].moveSeed(gameEngine.BoardGame.Players[0].Pits[0], gameEngine.BoardGame.Players[0].Pits[1]);
+            gameEngine.BoardGame.Players[0].moveSeed(gameEngine.BoardGame.Players[0].Pits[0], gameEngine.BoardGame.Players[0].Pits[2]);
+            gameEngine.BoardGame.Players[0].moveSeed(gameEngine.BoardGame.Players[0].Pits[0], gameEngine.BoardGame.Players[1].Pits[0]); // Vers le pit de Cécile
             Console.Write(gameEngine.BoardGame.playersListToString()); // Affichage du plateau après les moves
 
 
