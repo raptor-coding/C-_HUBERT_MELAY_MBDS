@@ -13,7 +13,7 @@ namespace projet_C_Sharp_Melay_Hubert
         public Player Adversary { get; set; }
         public int ChoosenPit { get; set; }
 
-        public AI(int ID, string name, List<Pit> pits, Player adversary ) : base(ID, name, pits)
+        public AI(int ID, string name, List<Pit> pits, Player adversary) : base(ID, name, pits)
         {
             this.Adversary = adversary;
         }

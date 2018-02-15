@@ -33,7 +33,7 @@ namespace projet_C_Sharp_Melay_Hubert
                 List<Pit> pits = boardgame.Players[k].Pits;
                 for (int i = 0; i < pits.Count; i++)
                 {
-                    for (int j = 1; j < pits[i].Seeds.Count + 1; j++)
+                    for (int j = 1; j < pits[i].Seeds ; j++)
                     {
                         DependencyObject child = VisualTreeHelper.GetChild(Col0Row0, j);
                         Ellipse e = (Ellipse)child;
