@@ -64,13 +64,16 @@ namespace projet_C_Sharp_Melay_Hubert
                     if (OtherPlayer.Pits[otherPlayerPit + i].Seeds == 2
                         || OtherPlayer.Pits[otherPlayerPit + i].Seeds == 3)
                     {
-                        //OtherPlayer.Pits[otherPlayerPit + i].removeGraine(1);
+                        OtherPlayer.Pits[otherPlayerPit + i].Seeds--;
                         CurrentPlayer.Score++;
                     }
                 }
             }
 
-           // BoardGame.designateCurrentPlayer();
+            if (CurrentPlayer.Score < 24)
+            {
+               // BoardGame.designateCurrentPlayer();
+            }
 
             Console.Write(this.BoardGame.playersListToString()); // Affichage du plateau avant de commencer les coups
             // Move de cailloux par les joueurs
