@@ -55,16 +55,24 @@ namespace projet_C_Sharp_Melay_Hubert
             gameEngine = new GameEngine(this, player1, player2);
 
             //Who start the game with a random
-           /* Random rand = new Random();
-            if (rand.Next(0, 2) == 0)
-            {
-                gameEngine = new GameEngine(this, player1, player2);
-            }
-            else
-            {
-                gameEngine = new GameEngine(this, player2, player1);
-            }  */        
+            /* Random rand = new Random();
+             if (rand.Next(0, 2) == 0)
+             {
+                 gameEngine = new GameEngine(this, player1, player2);
+             }
+             else
+             {
+                 gameEngine = new GameEngine(this, player2, player1);
+             }  */
+
+            boardGameGUI gameWindow = new boardGameGUI();
+            gameWindow.Show();
+            gameWindow.updateGUI(this); // GUI avant de démarrer le premier coup
+
             gameEngine.launchGame();
+
+            gameWindow.updateGUI(this); // GUI à la fin du jeu
+
 
 
         }

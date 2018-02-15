@@ -69,7 +69,6 @@ namespace projet_C_Sharp_Melay_Hubert
         {
             currentPlayerNb = 0;
 
-
             playOneRound();
 
         }
