@@ -15,5 +15,10 @@ namespace projet_C_Sharp_Melay_Hubert
             this.BoardGame = boardgame;
         }
 
+        public void launchGame()
+        {
+
+        }
+
     }
 }
