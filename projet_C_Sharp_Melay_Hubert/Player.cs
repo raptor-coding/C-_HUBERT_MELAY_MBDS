@@ -13,6 +13,15 @@ namespace projet_C_Sharp_Melay_Hubert
         public int Score { get; set; }
         public List<Pit> Pits { get; set; }
 
+        public delegate void playerPlayed (int pit);
+
+
+        public event playerPlayed playerPlayedEvent;
+
+
+
+
+
         public Player(int ID, String name, List<Pit> pits)
         {
             this.Id = ID;
@@ -37,11 +46,16 @@ namespace projet_C_Sharp_Melay_Hubert
             return text;
         }
 
+        internal virtual void choosePit()
+        {
+            
+            playerPlayedEvent(4);
+        }
+
         public void moveSeed(Pit pitSource, Pit pitDestination)
         {
-            Seed removedSeed = pitSource.Seeds[pitSource.Seeds.Count-1];
-            pitSource.Seeds.Remove(removedSeed);
-            pitDestination.Seeds.Add(removedSeed);
+            pitSource.Seeds--;
+            pitDestination.Seeds++;
         }
         
     }

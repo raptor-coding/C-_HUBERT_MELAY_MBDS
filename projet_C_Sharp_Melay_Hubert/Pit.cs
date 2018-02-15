@@ -9,9 +9,9 @@ namespace projet_C_Sharp_Melay_Hubert
     public class Pit
     {
         public int Id { get; set; }
-        public List<Seed> Seeds { get; set; }
+        public int Seeds { get; set; }
 
-        public Pit(int id, List<Seed> seeds)
+        public Pit(int id, int seeds)
         {
             this.Id = id;
             this.Seeds = seeds;
@@ -20,7 +20,7 @@ namespace projet_C_Sharp_Melay_Hubert
         override
         public String ToString()
         {
-            return "pit "+this.Id + " - nb graines : " + this.Seeds.Count+"\n";
+            return "pit "+this.Id + " - nb graines : " + this.Seeds+"\n";
         }
     }
 }
