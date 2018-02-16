@@ -38,7 +38,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col0Row0Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="35" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col0Row0Count" Content="{Binding numberOfSeedsinPit[0]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="35" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
 
         </Canvas>
         <Canvas Name="Col1Row0" Grid.Column="1" Grid.Row="0">
@@ -58,7 +58,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col1Row0Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col1Row0Count" Content="{Binding numberOfSeedsinPit[1]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col2Row0" Grid.Column="2" Grid.Row="0">
             <Ellipse Width="113" Height="113" Fill="MediumPurple"  />
@@ -77,7 +77,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col2Row0Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col2Row0Count" Content="{Binding numberOfSeedsinPit[2]}"  Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col3Row0" Grid.Column="3" Grid.Row="0">
             <Ellipse Width="113" Height="113" Fill="MediumPurple"  />
@@ -96,7 +96,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col3Row0Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="38" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col3Row0Count" Content="{Binding numberOfSeedsinPit[3]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="38" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col4Row0" Grid.Column="4" Grid.Row="0">
             <Ellipse Width="113" Height="113" Fill="MediumPurple"  />
@@ -115,7 +115,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col4Row0Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col4Row0Count" Content="{Binding numberOfSeedsinPit[4]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col5Row0" Grid.Column="5" Grid.Row="0">
             <Ellipse Width="113" Height="113" Fill="MediumPurple" />
@@ -134,7 +134,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col5Row0Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="37" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col5Row0Count" Content="{Binding numberOfSeedsinPit[5]}"  Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="37" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col0Row1" Grid.Column="0" Grid.Row="1">
             <Ellipse Width="113" Height="113" Fill="LimeGreen"  />
@@ -153,7 +153,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col0Row1Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="33" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col0Row1Count" Content="{Binding numberOfSeedsinPit[6]}"  Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="33" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
 
         </Canvas>
         <Canvas Name="Col1Row1" Grid.Column="1" Grid.Row="1">
@@ -173,7 +173,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col1Row1Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="33" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col1Row1Count" Content="{Binding numberOfSeedsinPit[7]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="33" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col2Row1" Grid.Column="2" Grid.Row="1">
             <Ellipse Width="113" Height="113" Fill="LimeGreen"  />
@@ -192,7 +192,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col1Row3Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col2Row1Count" Content="{Binding numberOfSeedsinPit[8]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col3Row1" Grid.Column="3" Grid.Row="1">
             <Ellipse Width="113" Height="113" Fill="LimeGreen"  />
@@ -211,7 +211,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col4Row1Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="35" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col3Row1Count" Content="{Binding numberOfSeedsinPit[9]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="35" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col4Row1" Grid.Column="4" Grid.Row="1">
             <Ellipse Width="113" Height="113" Fill="LimeGreen"  />
@@ -230,7 +230,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col04ow1Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col4Row1Count" Content="{Binding numberOfSeedsinPit[10]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
         <Canvas Name="Col5Row1" Grid.Column="5" Grid.Row="1">
             <Ellipse Width="113" Height="113" Fill="LimeGreen"  />
@@ -249,7 +249,7 @@
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="10" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="46" Canvas.Top="88" Visibility="Hidden" />
             <Ellipse Width="22" Height="22" Fill="Black" RenderTransformOrigin="2.801,2.66" Canvas.Left="81" Canvas.Top="88" Visibility="Hidden" />
-            <Label Name="Col5Row1Count"  Content="" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
+            <Label Name="Col5Row1Count" Content="{Binding numberOfSeedsinPit[11]}" Width="49" Height="56" FontSize="30" FontWeight="Bold" Canvas.Left="34" Canvas.Top="118" RenderTransformOrigin="0.646,0.232"/>
         </Canvas>
 
     </Grid>

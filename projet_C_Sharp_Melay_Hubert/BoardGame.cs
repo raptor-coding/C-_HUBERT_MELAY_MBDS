@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace projet_C_Sharp_Melay_Hubert
@@ -67,11 +68,12 @@ namespace projet_C_Sharp_Melay_Hubert
 
             boardGameGUI gameWindow = new boardGameGUI();
             gameWindow.Show();
-            gameWindow.updateGUI(this); // GUI avant de démarrer le premier coup
-
+            System.Threading.Thread.Sleep(1000);
+            Thread thread = new Thread(() => gameEngine.launchGame());
+            thread.Start();
             gameEngine.launchGame();
+            gameWindow.updateGUI(this);
 
-            gameWindow.updateGUI(this); // GUI à la fin du jeu
 
 
 
